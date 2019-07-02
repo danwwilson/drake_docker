@@ -14,5 +14,5 @@ The docker image does include a number of useful linux tools like
  - `openssh-client` allowing you to transfer files to the container over ssh
  - `mdbtools` to support `Hmisc` in accessing MS Access files
  - `p7zip-full` to allow use with `.7z` files
- - `libzmq3-dev` [ZeroMQ](http://zeromq.org/) to support `[clustermq](https://github.com/mschubert/clustermq)` for parallelisation.
+ - `libzmq3-dev` [ZeroMQ](http://zeromq.org/) to support [`clustermq`](https://github.com/mschubert/clustermq) for parallelisation.
  
