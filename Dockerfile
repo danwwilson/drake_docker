@@ -4,6 +4,7 @@ FROM rocker/rstudio:latest
 ENV ROOT=TRUE
 ENV PASSWORD=password
 ENV DISABLE_AUTH=TRUE
+ENV TZ=Australia/Brisbane
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -31,6 +32,7 @@ RUN apt-get update \
     pkg-config \
     p7zip-full \
     libzmq3-dev \
+  && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
   && rm -rf -- /var/lib/apt/lists /tmp/*.deb
 
 RUN install2.r --error \
