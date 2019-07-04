@@ -59,6 +59,7 @@ RUN install2.r --error \
   clustermq \
   secret \
   XLConnect \
+  gmailr \
   && R -e 'remotes::install_gitlab("thedatacollective/segmentr")' \
   && R -e 'remotes::install_gitlab("thedatacollective/typothemes")' \
   && R -e 'remotes::install_github("StevenMMortimer/salesforcer")' \
