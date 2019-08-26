@@ -66,6 +66,9 @@ RUN install2.r --error \
   && rm -rf /tmp/downloaded_packages/ \
   && rm -rf /tmp/*.tar.gz
 
+## Add RSTUDIO settings
+COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/
+
 ## Add /data volume by default
 VOLUME /data
 VOLUME /home/rstudio/.ssh
