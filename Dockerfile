@@ -51,7 +51,6 @@ RUN install2.r --error \
   scales \
   zoo \
   futile.logger \
-  caTools \
   writexl \
   feather \
   drake \
@@ -70,6 +69,10 @@ RUN install2.r --error \
 
 ## Add RSTUDIO settings
 COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/
+COPY keybindings/ /home/rstudio/.R/rstudio/
+
+## Update font cache
+RUN fc-cache -f -v
 
 ## Add /data volume by default
 VOLUME /data

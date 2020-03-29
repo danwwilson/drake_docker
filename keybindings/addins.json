@@ -1,0 +1,5 @@
+{
+    "drake::rs_addin_loadd" : "Alt+Cmd+L",
+    "drake::rs_addin_r_make" : "Alt+Cmd+.",
+    "drake::rs_addin_r_vis_drake_graph" : "Alt+Cmd+/"
+}
