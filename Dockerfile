@@ -69,7 +69,7 @@ RUN install2.r --error \
 
 ## Add RSTUDIO settings
 COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/
-COPY keybindings/ /home/rstudio/.R/rstudio/
+COPY keybindings/ /home/rstudio/.R/rstudio/keybindings/
 
 ## Update font cache
 RUN fc-cache -f -v
