@@ -63,6 +63,7 @@ RUN install2.r --error \
   && R -e 'remotes::install_gitlab("thedatacollective/segmentr")' \
   && R -e 'remotes::install_github("danwwilson/hrbrthemes", "dollar_axes")' \
   && R -e 'remotes::install_github("StevenMMortimer/salesforcer")' \
+  && R -e 'remotes::install_github("milesmcbain/fnmate")' \
   && R -e 'install.packages("data.table", type = "source", repos = "http://Rdatatable.github.io/data.table")' \
   && rm -rf /tmp/downloaded_packages/ \
   && rm -rf /tmp/*.tar.gz
