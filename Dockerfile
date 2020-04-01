@@ -69,6 +69,7 @@ RUN install2.r --error \
   && rm -rf /tmp/*.tar.gz
 
 ## Add RSTUDIO settings
+COPY fonts /usr/share/fonts
 COPY user-settings /home/rstudio/.rstudio/monitored/user-settings/
 COPY keybindings/ /home/rstudio/.R/rstudio/keybindings/
 
