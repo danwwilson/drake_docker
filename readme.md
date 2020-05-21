@@ -7,7 +7,7 @@ A basic RStudio server image enabled with [Drake] for R.
 A number of data connectors have been included like:  
  - `RPostgreSQL` for connecting to PostgreSQL databases
  - `Hmisc` for importing from MS Access databases (on linux)
- - `feather` for saving and accessing feather datasets
+ - `fst` for saving and accessing fst datasets
  - `XLConnect` for advanced usage with MS Excel docs
  
 The docker image does include a number of useful linux tools like  
