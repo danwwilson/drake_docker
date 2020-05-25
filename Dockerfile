@@ -28,6 +28,7 @@ RUN apt-get update \
     libudunits2-dev \
     tzdata \
   && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
+  && dpkg-reconfigure -f noninteractive tzdata
   && rm -rf -- /var/lib/apt/lists /tmp/*.deb
 
 RUN install2.r --error \
