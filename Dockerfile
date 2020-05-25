@@ -26,6 +26,7 @@ RUN apt-get update \
     pkg-config \
     p7zip-full \
     libudunits2-dev \
+    tzdata \
   && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
   && rm -rf -- /var/lib/apt/lists /tmp/*.deb
 
